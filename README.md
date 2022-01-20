@@ -5,6 +5,34 @@
 Pour utiliser le module Planning il faut importer les scripts, styles et views contenu dans le fichier *.zip* avec le Designer d'Ignition.
 Il faudra également importer le template *Flex_Button*.
 
+## Utilisation du Planning via Perspective
+
+
+
+### Gestion des périodes hebdomadaire
+
+
+
+### Gestion des périodes dérogatoires
+
+
+
+### Affichage des dérogations à partir de la date du jour
+
+
+
+### Calendrier d'un équipement hebdomaire et dérogations incluse
+
+
+
+## Ajout d'équipement à la base de données via le designer
+
+
+
+## Renommer un site, groupe ou equipement de la base de données
+
+
+
 ## Description
 
 Le module Planning est composé de trois parties:
