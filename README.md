@@ -5,9 +5,9 @@
 Pour utiliser le module Planning il faut importer les scripts, styles et views contenu dans le fichier *.zip* avec le Designer d'Ignition.
 Il faudra également importer le template *Flex_Button*.
 
-## Utilisation du Planning via Perspective
+### Création des tables nécessaire au module
 
-
+https://user-images.githubusercontent.com/63802082/150345005-dd2fc0a9-25aa-4913-8854-8a191e148907.mp4
 
 ### Gestion des périodes hebdomadaire
 
@@ -19,11 +19,11 @@ https://user-images.githubusercontent.com/63802082/150344326-624fe8cd-4e76-4039-
 
 ### Affichage des dérogations à partir de la date du jour
 
-
+https://user-images.githubusercontent.com/63802082/150345084-883b4b93-c51c-4bb5-bfa9-76b7321c5255.mp4
 
 ### Calendrier d'un équipement hebdomaire et dérogations incluse
 
-
+https://user-images.githubusercontent.com/63802082/150345081-449a76e8-ad3d-4ceb-ad48-4af0efa60abc.mp4
 
 ## Ajout d'équipement à la base de données via le designer
 
@@ -34,6 +34,8 @@ https://user-images.githubusercontent.com/63802082/150344393-eebf482c-6e4e-4235-
 https://user-images.githubusercontent.com/63802082/150344544-d8168138-0776-4a53-ac22-685d04c65bdd.mp4
 
 ## Support du DevIO
+
+https://user-images.githubusercontent.com/63802082/150345114-515b82d2-5b53-4a55-82bd-82394e51aa87.mp4
 
 ## Renommer un site, groupe ou equipement de la base de données
 
