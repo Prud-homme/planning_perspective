@@ -11,11 +11,11 @@ Il faudra également importer le template *Flex_Button*.
 
 ### Gestion des périodes hebdomadaire
 
-
+https://user-images.githubusercontent.com/63802082/150344332-7faa6eb8-4d89-4d6f-a0b2-29742ecd091d.mp4
 
 ### Gestion des périodes dérogatoires
 
-
+https://user-images.githubusercontent.com/63802082/150344326-624fe8cd-4e76-4039-b987-cd480e5c9841.mp4
 
 ### Affichage des dérogations à partir de la date du jour
 
@@ -27,11 +27,17 @@ Il faudra également importer le template *Flex_Button*.
 
 ## Ajout d'équipement à la base de données via le designer
 
+https://user-images.githubusercontent.com/63802082/150344393-eebf482c-6e4e-4235-b1e7-98a80f526751.mp4
 
+## Support du modbus
+
+https://user-images.githubusercontent.com/63802082/150344544-d8168138-0776-4a53-ac22-685d04c65bdd.mp4
+
+## Support du DevIO
 
 ## Renommer un site, groupe ou equipement de la base de données
 
-
+https://user-images.githubusercontent.com/63802082/150344689-a37235e3-a399-4cf8-a542-ca458b707809.mp4
 
 ## Description
 
