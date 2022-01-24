@@ -3,14 +3,16 @@
 ## Utilisation
 
 Pour utiliser le module Planning il faut importer les scripts, styles et views contenu dans le fichier *.zip* avec le Designer d'Ignition.
-Il faudra également importer le template *Flex_Button*.
+Le template *Flex_Button* est inclus dans l'archive.
+
+Il faudra par la suite appelé la view *Plannings* en incluant obligatoirement les paramètres *database* et *site*. Afin de renseigner un équipement et groupe au lancement du planning, il faudra ajouter le paramètre *init* comme Object avec deux valeurs *groupe* et *equipement*. Si le site utilise des restrictrions en fonction de profil utilisateur, les paramètre *Security* et *Acces* sont à renseigner.
 
 ### Vidéos
 
 #### Création des tables nécessaire au module
 
 <details>
-  <summary>Click to expand!</summary>
+  <summary>Afficher la vidéo</summary>
   
 https://user-images.githubusercontent.com/63802082/150345005-dd2fc0a9-25aa-4913-8854-8a191e148907.mp4
 </details>
@@ -18,7 +20,7 @@ https://user-images.githubusercontent.com/63802082/150345005-dd2fc0a9-25aa-4913-
 #### Gestion des périodes hebdomadaire
 
 <details>
-  <summary>Click to expand!</summary>
+  <summary>Afficher la vidéo</summary>
   
 https://user-images.githubusercontent.com/63802082/150344332-7faa6eb8-4d89-4d6f-a0b2-29742ecd091d.mp4
 </details>
@@ -26,7 +28,7 @@ https://user-images.githubusercontent.com/63802082/150344332-7faa6eb8-4d89-4d6f-
 #### Gestion des périodes dérogatoires
 
 <details>
-  <summary>Click to expand!</summary>
+  <summary>Afficher la vidéo</summary>
   
 https://user-images.githubusercontent.com/63802082/150344326-624fe8cd-4e76-4039-b987-cd480e5c9841.mp4
 </details>
@@ -34,7 +36,7 @@ https://user-images.githubusercontent.com/63802082/150344326-624fe8cd-4e76-4039-
 #### Affichage des dérogations à partir de la date du jour
 
 <details>
-  <summary>Click to expand!</summary>
+  <summary>Afficher la vidéo</summary>
   
 https://user-images.githubusercontent.com/63802082/150345084-883b4b93-c51c-4bb5-bfa9-76b7321c5255.mp4
 </details>
@@ -42,7 +44,7 @@ https://user-images.githubusercontent.com/63802082/150345084-883b4b93-c51c-4bb5-
 #### Calendrier d'un équipement hebdomaire et dérogations incluse
 
 <details>
-  <summary>Click to expand!</summary>  
+  <summary>Afficher la vidéo</summary>  
   
 https://user-images.githubusercontent.com/63802082/150345081-449a76e8-ad3d-4ceb-ad48-4af0efa60abc.mp4
 </details>
@@ -50,7 +52,7 @@ https://user-images.githubusercontent.com/63802082/150345081-449a76e8-ad3d-4ceb-
 #### Ajout d'équipement à la base de données via le designer
 
 <details>
-  <summary>Click to expand!</summary> 
+  <summary>Afficher la vidéo</summary> 
   
 https://user-images.githubusercontent.com/63802082/150344393-eebf482c-6e4e-4235-b1e7-98a80f526751.mp4
 </details>
@@ -58,7 +60,7 @@ https://user-images.githubusercontent.com/63802082/150344393-eebf482c-6e4e-4235-
 #### Support du modbus
 
 <details>
-  <summary>Click to expand!</summary>  
+  <summary>Afficher la vidéo</summary>  
   
 https://user-images.githubusercontent.com/63802082/150344544-d8168138-0776-4a53-ac22-685d04c65bdd.mp4
 </details>
@@ -66,7 +68,7 @@ https://user-images.githubusercontent.com/63802082/150344544-d8168138-0776-4a53-
 #### Support du DevIO
 
 <details>
-  <summary>Click to expand!</summary>  
+  <summary>Afficher la vidéo</summary>  
   
 https://user-images.githubusercontent.com/63802082/150345114-515b82d2-5b53-4a55-82bd-82394e51aa87.mp4
 </details>
@@ -74,7 +76,7 @@ https://user-images.githubusercontent.com/63802082/150345114-515b82d2-5b53-4a55-
 #### Renommer un site, groupe ou equipement de la base de données
 
 <details>
-  <summary>Click to expand!</summary>  
+  <summary>Afficher la vidéo</summary>  
   
 https://user-images.githubusercontent.com/63802082/150344689-a37235e3-a399-4cf8-a542-ca458b707809.mp4
 </details>
@@ -94,9 +96,9 @@ Le module Planning est composé de trois parties:
   - Exception: View qui permet de visualiser, d'ajouter ou modifier des dérogations à un équipement.
   - Hebdo: View qui permet de visualiser et paramétrer les périodes classiques d'activités pour un équipement
   - Hours_embed: View qui sert à afficher les heures à coté de l'affichage des jours (Day_Embed)
-  - Plannings: View globale qui reprend l'ensemble des éléments à travers un tableau
+  - PlanningsTabs: View globale qui reprend l'ensemble des éléments à travers un tableau
   - Popup_Edition: View qui est utilisé pour le paramétrage des périodes hebdomadaire ou dérogatoire
-  - _Plannings: View qui reprend la View planning en mode EmbedView. C'est cet view qui faudra dupliquer et adapter en fonction du site.
+  - Plannings: View qui reprend la View planning en mode EmbedView. C'est cet view qui faudra appeler avec certains paramètres.
   - Utils/SQL_Equipements: View qui sert à créer les tables nécessaires au module et ajouter des équipements à la base de données.
   - Utils/SQL_Rename: View qui permet de renommer un site, groupe ou équipement.
 
