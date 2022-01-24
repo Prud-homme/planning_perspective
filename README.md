@@ -102,15 +102,15 @@ Le module Planning est composé de trois parties:
   - Utils/SQL_Equipements: View qui sert à créer les tables nécessaires au module et ajouter des équipements à la base de données.
   - Utils/SQL_Rename: View qui permet de renommer un site, groupe ou équipement.
 
-# Requetes SQL via le Data Query Browser
+## Requetes SQL via le Data Query Browser (*facultatif*)
 
-## Requêtes basiques
+### Requêtes basiques
 
 ℹ️ Il est possible d'entrer des requêtes SQL via la fonctionnalité **Database Query Browser** *(dans Tools)* d'Ignition. Afin d'executer une requête SQL, il faut entrer la commande dans la zone à gauche du bouton *Execute* puis cliquer sur ce même bouton.
 
 Dans cette rubrique, les requêtes pourront être simplement copier-coller et executer.
 
-### Creation des tables SQL
+#### Creation des tables SQL
 
 ```
 CREATE TABLE equipements
@@ -153,39 +153,39 @@ CREATE TABLE plannings_exception
 )
 ```
 
-#### Utilisation de l'écriture des plannings en modbus
+##### Utilisation de l'écriture des plannings en modbus
 
 ```
 ALTER TABLE equipements
 ADD COLUMN num_mb INT
 ```
 
-#### Utilisation de l'écriture des plannings avec devIO
+##### Utilisation de l'écriture des plannings avec devIO
 
 ```
 ALTER TABLE equipements
 ADD COLUMN id_devio INT
 ```
 
-### Vider une table SQL
+#### Vider une table SQL
 
 Pour vider une table sql il faudra entrer la commande `TRUNCATE TABLE nom_table` où le nom_table correspond au nom de la table à vider.
 
 🚨 Attention : les données seront supprimées.
 
-### Supprimer une table SQL
+#### Supprimer une table SQL
 
 Pour supprimer une table sql il faudra entrer la commande `DROP TABLE nom_table` où le nom_table correspond au nom de la table à vider.
 
 🚨 Attention : les données seront supprimées.
 
-## Requêtes avancées
+### Requêtes avancées
 
 ⚠️ Dans cette rubrique, il sera nécessaire de modifier certaines informations avant d'executer la requête : numero_modbus, nom_site, nom_groupe, nom_equipement, numero_id_devio, nom_devio.
 
-### Equipement déjà présent dans la base de données
+#### Equipement déjà présent dans la base de données
 
-#### Ajouter un numéro modbus 
+##### Ajouter un numéro modbus 
 
 ```
 UPDATE equipements 
@@ -201,7 +201,7 @@ Si le site n'est pas présent dans la table devices, il faudra également entrer
 Insert into devices (nom_device, nom_site) Values ('nom_device', 'nom_site')
 ```
 
-#### Ajouter un id DevIO
+##### Ajouter un id DevIO
 
 ```
 UPDATE equipements 
