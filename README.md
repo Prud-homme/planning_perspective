@@ -167,6 +167,24 @@ ALTER TABLE equipements
 ADD COLUMN id_devio INT
 ```
 
+#### Supprimer un equipement
+
+Pour supprimer un équipement il faut exécuter deux commandes sql.
+
+```
+delete from equipements
+where site = "nom_du_site" and groupe = "nom_du_groupe" and equipement = "nom_equipement"
+```
+
+```
+delete from plannings
+where site = "nom_du_site" and groupe = "nom_du_groupe" and equipement = "nom_equipement"
+```
+
+ℹ️: Remplacer `delete` par `select *` permet de montrer ce qui sera supprimé de la base de données.
+
+📝: Pour supprimer un groupe, il suffira de garder la condition `where site = "nom_du_site" and groupe = "nom_du_groupe"`. Pour supprimer un groupe, il suffira de garder la condition `where site = "nom_du_site"`.
+
 #### Vider une table SQL
 
 Pour vider une table sql il faudra entrer la commande `TRUNCATE TABLE nom_table` où le nom_table correspond au nom de la table à vider.
