@@ -167,7 +167,7 @@ ALTER TABLE equipements
 ADD COLUMN id_devio INT
 ```
 
-#### Supprimer un equipement
+#### Supprimer un equipement et le planning associé
 
 Pour supprimer un équipement il faut exécuter deux commandes sql.
 
